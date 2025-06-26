@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../imgr.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+   /* Center the image */
+  background-attachment: fixed; /* Optional: stays fixed on scroll */
+  font-size: 14px;
+  font-family: sans-serif;
+  color: white;
+  overflow: auto;
+}
+a {
+  color: white;
+  font-size: 14px;
+}
+#main {
+  width: 100%;
+}
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+  margin-top: 10px;
+}
+#text {
+  width: 272px;
+  height: 560px;
+  left: 188px;
+  top: 80px;
+  position: absolute;
+}
+#code {
+  display: none;
+  color: rgb(146, 247, 247);
+  font-size: 16px;
+  margin-top: 70px;
+  line-height: 25px;
+  font-size: larger;
+  font-weight: bolder;
+}
+#clock-box {
+  position: absolute;
+  left: 50px; /* Moved to the left */
+  top: 640px; /* Moved to the bottom, near tree base */
+  font-size: 28px;
+  display: block;
+  z-index: 1001; /* Above canvas and image */
+  text-align: center;
+  color: #FFB6C1; /* Romantic light pink */
+  font-family: 'Georgia', serif;
+}
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+#clock {
+  margin-left: 0;
+  font-weight: bold;
+}
+#clock .digit {
+  font-size: 64px;
+}
+#canvas {
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+}
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+.hand {
+  cursor: pointer;
+}
+.say {
+  margin-left: 5px;
+}
+.space {
+  margin-right: 150px;
+}
+#message-box {
+  position: absolute;
+  margin-top: 450px;
+  font-size: 25px;
+  font-family: monospace;
+}
+/* Add fade-in to ensure visibility */
+.fade-in {
+  opacity: 1; /* Ensure it's visible immediately */
+  transition: opacity 1s ease-in; /* Optional: Add a fade effect */
+}
